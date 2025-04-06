@@ -543,7 +543,7 @@ body {
     align-items: center;
     justify-content: flex-start; /* Aligns buttons to the top */
     padding: 20px;
-    
+    box-sizing: border-box;
     width: 100%;
     margin-top: 20px; /* Small gap between video and buttons */
 }
