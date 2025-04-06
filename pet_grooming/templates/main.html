@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haustierflege</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/header_icon2.png') }}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <!-- Image Between Navbar and Slideshow -->
+    <div class="header-image-container">
+        <img src="{{ url_for('static', filename='images/header.png') }}" alt="Header Image" class="header-image">
+    </div>
+
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/pocetna_1.jpg') }}" alt="Image 1" class="slide-img">
+        </div>
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/pocetna_2.jpg') }}" alt="Image 2" class="slide-img">
+        </div>
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/pocetna_3.jpg') }}" alt="Image 3" class="slide-img">
+        </div>
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/pocetna_4.jpg') }}" alt="Image 4" class="slide-img">
+        </div>
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/pocetna_5.jpg') }}" alt="Image 5" class="slide-img">
+        </div>
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/pocetna_6.jpg') }}" alt="Image 6" class="slide-img">
+        </div>
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/pocetna_7.jpg') }}" alt="Image 7" class="slide-img">
+        </div>
+    
+        <!-- Left and Right Arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='images/header_icon2.png') }}" alt="Logo" class="navbar-logo">
+        </a>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <!-- Facebook Link -->
+            <a href="https://www.facebook.com/profile.php?id=61568881768083&locale=sr_RS" target="_blank">
+                <img src="{{ url_for('static', filename='images/face_icon.png') }}" alt="Facebook" class="social-icon">
+            </a>
+            
+            <!-- Instagram Link -->
+            <a href="https://www.instagram.com/haustierpflege_alek_delibasic/" target="_blank">
+                <img src="{{ url_for('static', filename='images/inst_icon.png') }}" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/gallery">
+                    <img src="{{ url_for('static', filename='images/logo_galery1.png') }}" 
+                         alt="Logo" 
+                         style="height: 40px; margin-right: 8px;">
+                    Galerie
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+    
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; Haustierflege Aleksandra Delibasic 2025. All Rights Reserved.</p>
+        <p>Made with <span>&#9829;</span> in Augsburg</p>
+    </div>
+</footer>
+
+ <!-- Contact Info on Left Side -->
+<div class="contact-info-sidebar">
+    <div class="contact-header">
+        <h4>Kontaktieren</h4>
+        <a href="{{ url_for('services') }}" class="contact-button">Dienstleistungen</a>
+    </div>
+    <p><strong>Telefon:</strong>+49 176 30475941</p>
+    <p><strong>Email:</strong> contact@petgrooming.com</p>
+    <p><strong>Adresse:</strong> Bayern, Augsburg </p>
+    <p><strong>Arbeitszeit:</strong> Mon-Fri, 9 AM - 5 PM</p>
+</div>
+
+<!-- About Me Section (Will be hidden on mobile) -->
+<div class="about-me-section">
+    <h4>Über mich</h4>
+    <p>Ich habe schon immer gewusst, dass ich mit Tieren arbeiten möchte. Als ich aufwuchs, war ich immer von Hunden umgeben, und meine Liebe zu ihnen ist mit den Jahren nur noch gewachsen. Nach ein paar Jahren in Deutschland habe ich beschlossen, meinen Traum zu verwirklichen und Hundefriseurin zu werden. Mit viel Mühe und Geduld habe ich es geschafft, mein Ziel zu erreichen. Heute gehe ich zu den Leuten nach Hause und frisiere Hunde aller Größen und Rassen. Ich betrachte meinen Job nicht nur als Arbeit, sondern als Berufung. Jeden Tag bin ich von meinen Lieblingstieren umgeben, und meine größte Belohnung ist es, glückliche und zufriedene Hunde zu sehen, nachdem ich sie frisiert habe. Meine Freizeit verbringe ich mit Spaziergängen mit meiner 13-jährigen Malteserhündin Emily. Ich bin glücklich, dass ich einen Job mache, den ich liebe, und dass ich viele Hunde und ihre Besitzer glücklich machen kann.</p>
+</div>
+
+<!-- Image on Right Side -->
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/flajer.jpg') }}" alt="Side Image" class="img-fluid">
+</div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include Your Custom JavaScript -->
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

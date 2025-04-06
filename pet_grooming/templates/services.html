@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="{{ url_for('static', filename='images/header_icon2.png') }}" alt="Logo" class="navbar-logo">
+            </a>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://facebook.com/yourprofile" target="_blank">
+                <img src="{{ url_for('static', filename='images/face_icon.png') }}" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank">
+                <img src="{{ url_for('static', filename='images/inst_icon.png') }}" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/gallery">
+                <img src="{{ url_for('static', filename='images/logo_galery1.png') }}" 
+                     alt="Logo" 
+                     style="height: 40px; margin-right: 8px;">
+                Galerie
+            </a>
+        </li>
+    </ul>
+    
+        </div>
+        
+        
+    </nav>
+
+
+    <!-- Single Div for Service Content -->
+    <div class="container mt-5 pt-5">
+        <div class="service-content"></div>
+        <h2 class="text-center">Unsere Dienstleistungen</h2>
+        <p class="lead text-center">
+            Professioneller Hundefriseur für Ihre Lieblinge.
+Sie suchen einen liebevollen und erfahrenen Hundefriseur, der zu Ihnen nach Hause kommt? Dann sind Sie bei mir genau richtig!
+Mein Angebot:
+ * Kleinenpflege (ab 30€): Baden, Föhnen, Bürsten und hygienisches Scheren der Pfoten und des Intimbereichs.
+ * Komplettpflege (ab 50€): Alle Leistungen der Kleinenpflege  plus Haarschnitt nach Ihren Wünschen. Krallen schneiden und Ohrenpflege sind im Preis inbegriffen.
+Ich arbeite mit Hunden aller Rassen und Größen!
+Ich komme zu Ihnen nach Hause in Augsburg.
+Für weitere Informationen oder Terminvereinbarungen schreiben Sie mir gerne eine Nachricht oder rufen Sie mich unter 0176 30475941 an.
+        </p>
+       
+    </div>
+
+    <!-- Add Image Below Text -->
+    <div class="text-center">
+        <img src="{{ url_for('static', filename='images/flajer.jpg') }}" alt="Service Image" class="img-fluid">
+    </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    

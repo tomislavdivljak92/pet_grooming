@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='images/header_icon2.png') }}" alt="Logo" class="navbar-logo">
+        </a>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://facebook.com/yourprofile" target="_blank">
+            <img src="{{ url_for('static', filename='images/face_icon.png') }}" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://instagram.com/yourprofile" target="_blank">
+            <img src="{{ url_for('static', filename='images/inst_icon.png') }}" alt="Instagram" class="social-icon">
+        </a>
+    </div>
+<ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="/gallery">
+            <img src="{{ url_for('static', filename='images/logo_galery1.png') }}" 
+                 alt="Logo" 
+                 style="height: 40px; margin-right: 8px;">
+            Galerie
+        </a>
+    </li>
+</ul>
+
+    </div>
+</nav>
+
+
+<style>
+
+    
+    /* Custom CSS for centering images */
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      
+    }
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px; /* Rounded corners */
+      border: 3px solid #c398a2; /* Add border with the given color */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid #c398a2; /* Add border with the given color */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+    }
+    .row {
+      justify-content: center;
+    }
+  </style>
+
+  <!-- Image Section -->
+  <div class="container mt-5 pt-5" style="margin-top: 80px;"> <!-- Adjust margin-top to avoid overlap -->
+    
+
+    <div class="row">
+      <!-- Row 1 -->
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_1.jpg') }}" class="card-img-top" alt="Image 1" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Lea ❤️
+              Ist sie nicht wunderschön? 😍Lea ist eine junge Dame, 3 Jahre alt. ☺️
+              Als ich zum Termin kam, sagten sie mir, dass sie während der Behandlung unruhig sein kann, aber das Gegenteil war der Fall ☺️ Ich habe es sehr genossen, mit ihr zu arbeiten.
+              Die Besitzerin kümmert sich wunderbar um sie, zusammen mit ihren Zwillingsmädchen, und sie nennen sie Čupa 🫢☺️
+              Ich freue mich auf weitere Treffen mit ihnen 🍀❤️💞
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_2.jpg') }}" class="card-img-top" alt="Image 2" />
+          <div class="card-body d-flex align-items-center">
+             
+            <p class="card-text">❤️ Abschlussarbeit.  Ein Pudel 🐾🐩😍                            
+             </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_3.jpg') }}" class="card-img-top" alt="Image 3" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Tobi ❤️ Ein weiterer meiner Freunde. Fröhlich, verspielt, lieb... und er liebt es zu bellen 🤣
+              Wie alle meine Freunde hat er wundervolle Besitzer, die sich sehr gut um ihn kümmern. Für den Winter ist er von Pullovern bis zur Jacke ausgestattet 😄
+              Wir haben beide die komplette Behandlung genossen. Vom Baden bis zum Scheren. Er hat sich total fallen lassen. Am Ende hatten wir sogar noch Zeit zum Spielen. Und als Belohnung dafür, dass er so toll war, hat er ein Leckerli bekommen 🙂
+              Ich freue mich sehr auf weitere Treffen, sowohl mit ihm als auch mit seinen Besitzern. ❤️🐶</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_4.jpg') }}" class="card-img-top" alt="Image 4" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Milo ❤️ Milo ist ein Baby, 8 Monate alt.  Ein Lieblingsmitglied der Familie.  Er ist sogar angestellt, er geht mit seinem Besitzer ins Restaurant, um zu arbeiten :)😊
+              Er badete und bürstete gern, und ich auch mit ihm. 🥰🤩 ❤️🐶</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_5.jpg') }}" class="card-img-top" alt="Image 5" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Pati ❤️
+              Pati ist noch ein Baby ☺️ Er ist 4 Monate alt.
+              Ein wunderbares, fröhliches und verspieltes Geschöpf. ❤️
+              Da dies seine erste Behandlung war, wurde er nur gebadet und gebürstet. Er hat alles gut angenommen und hat keine Angst, was das Wichtigste ist ☺️
+              Er hat eine Katzenfreundin, mit der er sich gut versteht. Wie alle meine Freunde hat er wunderbare Besitzer, und ich muss besonders das Mädchen Elena loben, die sich besonders um ihn kümmert und ihn bürstet ☺️
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_6.jpg') }}" class="card-img-top" alt="Image 6" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Leo ❤️
+              Leo ist ein ganz besonderer Hund, so fröhlich und verspielt.
+              Es freut mich sehr, dass ich ihm helfen konnte, sich wieder wohl in seiner Haut zu fühlen. Er hatte bei seiner ersten Behandlung leider eine schlechte Erfahrung gemacht, aber bei mir hat er gemerkt, dass es auch anders geht – mit viel Geduld und Liebe. ☺️  Er hatte einige Verfilzungen, deshalb haben wir die Behandlung nach zwei Wochen wiederholt. ☺️ Auch wenn das Ergebnis vielleicht nicht perfekt ist, das Wichtigste ist, dass wir die Verfilzungen loswerden konnten und seine Haut jetzt endlich wieder atmen kann.  Ich freue mich schon auf die nächsten Treffen mit Leo und seinem Besitzer! ☺️
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_7.jpg') }}" class="card-img-top" alt="Image 7" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Lilly 💞 Was soll man zu dieser Schönheit sagen? 🤩Man kann sie einfach nur lieben. Sie hat mich an der Tür begrüßt, fröhlich mit dem Schwanz wedelnd, und mich genauso verabschiedet. Lilly hat das Baden genossen, sie hatte eine richtige Spa-Behandlung. In nur wenigen Augenblicken sind wir uns nahe gekommen und ich habe gespürt, dass sie mir vertraut. 💗💗💗Wie alle Hunde liebt sie Spaziergänge und ist immer bereit für Bewegung. Während ihr Frauchen das Mittagessen kocht, unterhält sie das Baby. Ein wirklich wundervolles Wesen. Sie kann sich glücklich schätzen, so tolle Besitzer zu haben, die ihr die Liebe und Aufmerksamkeit schenken, die sie verdient.🍀🥰💞🤩💗🐶</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_8.jpg') }}" class="card-img-top" alt="Image 8" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Lora ❤️
+              Ich muss zugeben, dass es eine Herausforderung war, die komplette Behandlung von Lora durchzuführen. Ich musste sehr geduldig sein. Leider hat sie mich ein paar Mal gebissen, so dass ich den Rest der Behandlung mit einem Maulkorb und mit Hilfe des Besitzers durchgeführt habe. 😐 Leider hatte ich keine andere Wahl. Ich glaube, dass ich mit viel Geduld, Liebe und Aufmerksamkeit ihre Vertrauen gewinnen werde, sowohl ich als auch andere Menschen.🍀❤️
+              Die Besitzer sind sehr zufrieden. Ich habe ein Kompliment bekommen, dass es niemand geschafft hat, sie so schön herzurichten. ☺️Und ich bin wieder stolz auf mich, dass ich es geschafft habe. 🤗🍀❤️🥰😍💞
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 5 -->
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_9.jpg') }}" class="card-img-top" alt="Image 9" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Kuki ❤️
+              Kuki ist ein wirklich verspielter Hund. Er ist fröhlich, aber er liebt es auch, wichtig zu tun und ein bisschen zu zwicken 😅 Er mag es überhaupt nicht, wenn man ihn am Kopf berührt. Ich bin nicht ganz zufrieden mit dem Ergebnis, aber ich bin sicher, dass es beim nächsten Mal besser sein wird. Kuki hat eine Katzenfreundin, mit der er gerne spielt ☺️ Er ist ein beliebtes Familienmitglied und alle lieben ihn sehr. Wie alle meine Freunde hat er eine wundervolle Besitzerin, mit der ich in entspannter Atmosphäre die Behandlung durchgeführt habe.❤️🍀</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_10.jpg') }}" class="card-img-top" alt="Image 10" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Šapa ❤️
+              Heute habe ich Šapa, diesem süßen 3,5 Jahre alten Bichon, einen richtigen Spa-Tag gegönnt! 🛁✨ Baden und Scheren liefen super, aber ich muss zugeben, das Trocknen fiel ihm etwas schwer. 😅 Schaut euch nur dieses Näschen an!
+              Ansonsten ist Šapa ein geliebtes Familienmitglied, fröhlich, verspielt und liebenswert ❤️ Ich habe es genossen.🍀</p>
+          </div>
+        </div>
+      </div>
+    
+    
+     <!-- Row 5 -->
+     <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_11.jpg') }}" class="card-img-top" alt="Image 11" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Gricko ❤️
+              Lernt Gricko kennen, meinen dreijährigen Freund! 🐾 Dieser Kleine liebt Bälle und das Spielen, aber zugegeben, Baden und das Berühren seines Kopfes sind nicht gerade seine Favoriten. 🛁✂️ Heute haben wir das regelmäßige Baden und Schneiden erledigt, und jetzt ist er wieder weich und duftet gut! 💖
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_12.png') }}" class="card-img-top" alt="Image 12" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Meine Emili ❤️ eine Malteser-Dame mit dreizehn Jahren Erfahrung! 🐾 Wir haben so viel zusammen erlebt, von langen Spaziergängen bis hin zu endlosem Kuscheln. Sie ist meine große Schmusebacke und treue Begleiterin. Seit meine Tochter in unser Leben getreten ist, gebe ich zu, ist Emili ein wenig eifersüchtig, weil sie es gewohnt war, die ganze Aufmerksamkeit für sich zu haben. 😊 Aber wer kann es ihr verdenken? Sie ist schließlich meine erste Liebe, meine einzige und unersetzliche Emili. ❤️ Ich bin so glücklich, dass sie mein Haustier ist, mein kleiner Engel mit weißem Fell.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+
+      <!-- Row 7 -->
+    <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_13.jpg') }}" class="card-img-top" alt="Image 13" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Mrki ❤️
+              Heute war ein Verwöhntag! 🛁✨ Mrki, unser 16-jähriger Schönling, hat eine komplette Spa-Behandlung bekommen – Schneiden und Baden! Ich muss zugeben, für sein Alter ist er immer noch ein echtes Model! 😍
+              Trotz seines fortgeschrittenen Alters ist Mrki immer noch unglaublich verspielt und voller Energie. Und wisst ihr, wer sein bester Freund ist? Natürlich Gricko, der süße Shih Tzu! Die beiden sind unzertrennlich und immer gemeinsam auf irgendeinem Abenteuer. 🐾❤️
+              Schaut euch nur diesen süßen Kerl nach dem Schneiden und Baden an – ist er nicht unwiderstehlich? 🥰 Mrki zeigt uns jeden Tag, dass Alter nur eine Zahl ist und die Freude am Leben ewig währt!🍀🐶</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_14.jpg') }}" class="card-img-top" alt="Image 14" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Beni ❤️
+            Beni ist ein zuckersüßer Yorkshire Terrier, 13 Jahre alt. Seine beste Freundin ist Vendi, mit der er unzertrennlich ist. Ihre Geschichte ist nicht einfach, aber das Wichtigste ist, dass sie zusammen Spaß haben und sich gut verstehen</p>
+          </div>
+        </div>
+      </div>
+       
+       <!-- Row 8 -->
+    <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_15.jpg') }}" class="card-img-top" alt="Image 15" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Žak ❤️ Ich möchte euch Žak vorstellen. ☺️
+              Žak ist ein unglaubliches Wesen, für seine Olja ist er die ganze Welt.🌍
+              Die Liebe zwischen den beiden kann man nicht in Worte fassen. Man spürt sie einfach in der Luft.💞
+              Er ist ein sehr verspielter Hund, der 24 Stunden am Tag draußen verbringen würde. Er liebt alle seine Freunde, besonders die, die größer sind als er.😅
+              Er ist sehr gehorsam, er versteht alles.💗
+              Er liebt es, aus dem Fenster zu schauen. Dieses Mal war es Zeit für eine komplette Behandlung. Es ist eine Untertreibung zu sagen, dass wir beide es genossen haben. Bilder sagen mehr als 1000 Worte.❤️🍀😍🐕🐶🤩</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_16.jpg') }}" class="card-img-top" alt="Image 16" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Fleki ❤️
+              Ein Seelchen!❤️ Ich finde einfach nicht die richtigen Worte, um ihn zu beschreiben. Sehr verschmust, sanft, lieb...💞💗🍀
+              Er und sein Bruder Milo sind ein echtes Team. Sie können sogar zusammen tanzen.🤩
+              Ich freue mich auf weitere Kontakte mit ihnen und lange Gespräche mit ihrem Besitzerin ☺️❤️🤩🍀🐶🐕</p>
+          </div>
+        </div>
+      </div>
+         <!-- Row 9 -->
+    <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_17.jpg') }}" class="card-img-top" alt="Image 17" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Kiki ❤️
+              Ich möchte euch diesen Hübschen vorstellen. 🤩Kiki ist ein wundervoller Hund und wie ich gehört habe, ist er der coolste Typ in der Gegend.😎🥰 Seine Besitzerin ist eine tolle Frau, die neben drei Kindern auch noch Zeit findet, sich hervorragend um ihn zu kümmern. 🥰Sie achtet sehr auf seine Ernährung und Pflege. Sie geht nirgendwo ohne ihn hin. Wie mit all meinen anderen Freunden habe ich auch mit Kiki die komplette Behandlung genossen :)🍀😍🐕🐶🤩☺️❤️</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 d-flex">
+        <div class="card d-flex">
+          <img src="{{ url_for('static', filename='images/img_18.jpg') }}" class="card-img-top" alt="Image 18" />
+          <div class="card-body d-flex align-items-center">
+            <p class="card-text">Bela ❤️
+              Wie ihr Name schon sagt, ist sie eine kleine weiße Schneeflocke.❄️
+              Verspielt, verschmust, süß. 💞💗😍
+              Stolz bewacht sie das Baby ihrer Besitzerin, während es schläft. 😍Außerdem liebt sie es, aus dem Fenster zu schauen.😆
+              Wir haben beide die Behandlung genossen, was man hoffentlich auch auf den Bildern sieht.☺️🍀💗💞🥰😍❤️</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="{{ url_for('gallery') }}" class="btn btn-secondary">Back to Gallery</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
