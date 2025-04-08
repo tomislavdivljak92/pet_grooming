@@ -36,20 +36,9 @@ body, html {
   }
 
 
-  .navbar-nav .nav-item img {
-    height: 30px; /* Adjust the size */
-    margin-right: 8px; /* Spacing from text */
-    border-radius: 5px; /* Slightly rounded corners */
-    box-shadow: 2px 2px 10px rgba(231, 231, 231, 0.3); /* Soft shadow */
-    opacity: 0.9; /* Slight transparency */
-    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
-}
+  
 
-.navbar-nav .nav-item a:hover img {
-    opacity: 1; /* Fully visible on hover */
-    transform: scale(1.05); /* Slight zoom effect */
-    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8)); /* White glow effect */
-}
+
 
 
 
@@ -204,15 +193,16 @@ body {
 
 /* Navbar Links */
 .navbar-nav .nav-link {
-    color: rgb(236, 236, 236) !important;
-    font-size: 22px; /* Bigger font size */
+    color: #c398a2 !important;
+    font-size: 20px; /* Bigger font size */
     font-weight: bold; /* Bold letters */
     
     transition: 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #fad7df !important; /* Light pink on hover */
+    color: #c398a2 !important;
+   
     transform: translateX(5px); /* Moves to the right */
 }
 
@@ -257,10 +247,10 @@ body {
 /* About Me Section - Positioned below Contact Info */
 .about-me-section {
     position: absolute;
-    top: 440px; /* Adjust this so it appears below the contact info */
+    top: 460px; /* Adjust this so it appears below the contact info */
     left: 20px;
     width: 600px;
-    height: 840px;
+    height: 800px;
     padding: 20px;
     background-color: #f5f5f5; /* Light pinkish background */
     border-radius: 8px;
@@ -334,7 +324,8 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: white !important;
+    color: #ed9aaa !important; /* Color for header */
+
     font-size: 22px;
     font-weight: bold;
     margin-left: 40px;
@@ -505,17 +496,16 @@ body {
 }
 
 .contact-button {
-    background-color: #ed9aaa;
-    color: #ebeff3;
+    font-weight: bold;
+    color: #ed9aa0; /* Orange shade */
     text-decoration: none;
-    padding: 6px 12px;
-    border-radius: 5px;
-    font-size: 14px;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease, color 0.2s ease;
+    font-size: 1.2rem;
+    
 }
 
 .contact-button:hover {
-    transform: scale(1.1);
+    color: #c398a2;
     
 
 }
@@ -640,4 +630,77 @@ video, iframe {
 .footer span {
     color: #ed9aaa;
 
+}
+
+
+
+.gallery_ {
+    font-weight: bold;
+    color: #ed9aa0; /* Orange shade */
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    
+}
+
+
+.gallery_:hover {
+    color: #c398a2;
+  }
+
+
+ /* For Tablets and Small Laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        display: none;
+    }
+
+    .slideshow-container {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px; /* Add margin to push the content below */
+    }
+
+    .contact-info-sidebar{
+        width: 80%;  /* Adjust width of content sections */
+        margin: 0 auto;  /* Center content */
+        margin-bottom: 20px; /* Add space between sections */
+        display: none;
+    }
+    .about-me-section {
+        
+        display: none;
+    }
+
+    .image-container {
+        display: none;
+    }
+}
+
+/* For Larger Tablets and Small Laptops */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slideshow-container {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px; /* Add more margin for larger screens */
+    }
+
+    .contact-info-sidebar,
+    .about-me-section {
+        display: none;
+    }
+
+    .image-container {
+        display: none;
+    }
 }
