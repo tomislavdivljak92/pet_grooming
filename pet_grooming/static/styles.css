@@ -380,12 +380,18 @@ body {
         display: none;
         top: 0;
         position: relative;
+        margin-top: 0px;
         margin-bottom: 5px;
         margin-left: 20px ;
         width: 100%;
         max-width: 100%;
         
         
+        
+    }
+
+    .header-image-container {
+        display: none;
     }
 
     .image-container img {
@@ -431,6 +437,9 @@ body {
 
     .header-image-container{
         margin-left: 10px;
+    }
+    .footer {
+        display: none;
     }
 }
 
@@ -665,12 +674,7 @@ video, iframe {
         margin-bottom: 20px; /* Add margin to push the content below */
     }
 
-    .contact-info-sidebar{
-        width: 80%;  /* Adjust width of content sections */
-        margin: 0 auto;  /* Center content */
-        margin-bottom: 20px; /* Add space between sections */
-        display: none;
-    }
+    .contact-info-sidebar,
     .about-me-section {
         
         display: none;
@@ -679,6 +683,10 @@ video, iframe {
     .image-container {
         display: none;
     }
+    .footer {
+        display: none;
+    }
+    
 }
 
 /* For Larger Tablets and Small Laptops */
@@ -703,4 +711,9 @@ video, iframe {
     .image-container {
         display: none;
     }
+
+    .footer {
+        display: none;
+    }
+    
 }
